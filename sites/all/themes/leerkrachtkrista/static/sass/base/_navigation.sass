@@ -1,0 +1,35 @@
+nav
+  height: 67px
+  margin: 15px auto 0
+  .block
+    .content
+      padding: 0
+
+  .links
+    +inline-list
+    margin: 0 auto
+    font-size: 0
+
+    li
+      display: inline-block
+      font-size: 30px
+      list-style: none
+      list-style-type: none
+      margin: 0
+      padding: 0px 0px 0 0
+
+      a
+        +bvp(transition, color .15s linear)
+        color: whitesmoke
+        display: block
+        height: 100%
+        margin-right: 35px
+        outline: none
+        padding-top: 24px
+        position: relative
+        &:hover
+          color: whitesmoke
+        &.active
+          color: whitesmoke
+          &:hover
+            color: lighten(whitesmoke, 10%)
